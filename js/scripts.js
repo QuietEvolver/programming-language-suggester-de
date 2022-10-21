@@ -16,7 +16,7 @@ function languageSelector(e){
   let output;
 
   // const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
-  const questionOne = parseInt(document.querySelector("input[name='question']:checked").value); 
+  const questionOne = parseInt(document.querySelector("input[name='question-one']:checked").value); 
   // const questionOne = parseInt(document.querySelector("question#question-one").value);
   // const questionTwo = parseInt(document.querySelector("input#question-Two").value);
   // const questionThree = parseInt(document.querySelector("input#question-three").value);
