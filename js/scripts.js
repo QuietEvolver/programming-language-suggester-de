@@ -15,12 +15,12 @@ function languageSelector(e){
   let totalValue = null;
 
   const questionValue = document.querySelector("input[name='question']:checked").value; 
-  const questionOne = parseInt(document.getElementById("question-one").value);
-  const questionTwo = parseInt(document.getElementById("question-Two").value);
-  const questionThree = parseInt(document.getElementById("question-three").value);
-  const questionFour = parseInt(document.getElementById("question-four").value);
-  const questionFive = parseInt(document.getElementById("question-five").value);
-  const questionSix = parseInt(document.getElementById("question-six").value);
+  const questionOne = parseInt(document.querySelector("input#question-one").value);
+  const questionTwo = parseInt(document.querySelector("input#question-Two").value);
+  const questionThree = parseInt(document.querySelector("input#question-three").value);
+  const questionFour = parseInt(document.querySelector("input#question-four").value);
+  const questionFive = parseInt(document.querySelector("input#question-five").value);
+  const questionSix = parseInt(document.querySelector("input#question-six").value);
 
   document.getElementById("language-1").setAttribute("class", "hidden");
   document.getElementById("language-2").setAttribute("class", "hidden");
