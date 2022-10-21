@@ -1,4 +1,5 @@
 // BI
+const totalValue = questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix;
 
 // UI
 
@@ -11,21 +12,19 @@ function languageSelector(e){
   const questionFour = parseInt(document.querySelector("input[name='question-four']:checked").value);
   const questionFive = parseInt(document.querySelector("input[name='question-five']:checked").value);
   const questionSix = parseInt(document.querySelector("input[name='question-six']:checked").value);
-  const totalValue = questionOne + questionTwo + questionThree + questionFour + questionFive;
-
   document.getElementById("language-1").setAttribute("class", "hidden");
   document.getElementById("language-2").setAttribute("class", "hidden");
   document.getElementById("language-3").setAttribute("class", "hidden");
 
   // language totals calculations
-  if( totalValue <= 6 ){ 
+  if( totalValue <= 8 ){ 
   document.getElementById("language-1").removeAttribute("class"); 
   return totalValue; 
   } 
-  else if (( totalValue > 6 ) && ( totalValue <= 12)){
+  else if (( totalValue > 9 ) && ( totalValue <= 14)){
   document.getElementById("language-2").removeAttribute("class");
   return totalValue;
-  } else if ( ( totalValue > 12 ) || ( totalValue <= 18 )) {
+  } else if ( ( totalValue > 14 ) || ( totalValue <= 18 )) {
   document.getElementById("language-3").removeAttribute("class");
   return totalValue;
   }
@@ -37,5 +36,5 @@ function languageSelector(e){
 window.addEventListener("load", function() {
   const form = document.getElementById("form-submit");
   form.addEventListener("submit", languageSelector);
-  form.querySelectorAll("input[type='radio']:checked").reset(); 
+  form.getElementById("form-submit").reset(); 
 });
