@@ -2,8 +2,7 @@
 
 #### By _**Vera Weikel**_
 
-#### _Triangle Tracker functionality website_
-
+#### _Programming Language Suggester functionality website_
 
 ## Technologies Used
 
@@ -23,15 +22,20 @@ Go: Like watermelon
 Python: Like snow
 Rust: Like cats
 
+* Include a form with a minimum of 5 survey questions.
+* Offer a minimum of 3 different language suggestions.
+* One branch should return one result. It shouldn't be possible to be suggested two languages at once.
+* Make sure that when the user submits the survey again (for a second or third time), that previous answers are hidden, cleared, or replaced prior to showing the new result.
+
 ## Setup/Installation Requirements
 
-* _Clone [this](https://github.com/QuietEvolver/programming-language-suggester-de.git) repositiory to your desktop_
-* _Open the cloned portfolio folder located on your desktop_
-* _Open the index.html file in your browser_
+* _Clone [this](https://github.com/QuietEvolver/programming-language-suggester-de.git) repositiory to your desktop,_
+* _Navigate to the top level of the directory._
+* _Open the index.html file in your browser._
 
 ## Known Bugs
 
-* _No known bugs at this time_
+* _No known bugs at this time._
 
 ## License
 
