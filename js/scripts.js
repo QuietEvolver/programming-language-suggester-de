@@ -17,6 +17,8 @@ const questionFour = parseInt(document.getElementById("question-four").value);
 const questionFive = parseInt(document.getElementById("question-five").value);
 const questionSix = parseInt(document.getElementById("question-six").value);
 
+document.getElementById("language-1").setAttribute("class", "hidden");
+
 /* Given langs: a, b, c:
   Q1 - a
   Q2 - b
