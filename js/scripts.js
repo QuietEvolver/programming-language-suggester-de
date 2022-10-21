@@ -13,6 +13,7 @@
 function languageSelector(e){
   e.preventDefault();
   let totalValue;
+  let output;
 
   // const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
   const questionOne = parseInt(document.querySelector("input[name='question']:checked").value); 
@@ -35,12 +36,27 @@ function languageSelector(e){
     Q5 - if (a & b) || (b & c) = b
     Q6 - if (a || b) && (c) = c
   */
-
+  
+  // question totals evaluations
   if( questionOne ){
     totalValue = questionOne;
-    console.log("total value: a", totalValue)
+    console.log("total Q1 if/else value: ", totalValue)
+    document.getElementById("language-1").removeAttribute("class");
+    output = "Res = Go: Like watermelon";
     return totalValue;
   }
+
+  // TO BE MOVED OUTSIDE:
+   // language totals calculations
+   if( totalValue <= 6 ){ 
+    console.log("eval tot", totalValue);
+    console.log(" totV output", output);
+    document.getElementById("language-1").removeAttribute("class");
+    output = "Res = Go: Like watermelon";
+   }
+    document.getElementById("output").innerText = output;
+
+    console.log(" outside output", output);
 }
 // Time permitting, to be added: handleSubmission(languageSelector)
 window.addEventListener("load", function() {
