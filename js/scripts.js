@@ -12,15 +12,18 @@
 
 function languageSelector(e){
   e.preventDefault();
-  let totalValue = null;
+  let totalValue;
+  const a = 1;
+  const b = 2;
+  const c = 3; 
 
-  const questionValue = document.querySelector("input[name='question']:checked").value; 
-  const questionOne = parseInt(document.querySelector("input#question-one").value);
-  const questionTwo = parseInt(document.querySelector("input#question-Two").value);
-  const questionThree = parseInt(document.querySelector("input#question-three").value);
-  const questionFour = parseInt(document.querySelector("input#question-four").value);
-  const questionFive = parseInt(document.querySelector("input#question-five").value);
-  const questionSix = parseInt(document.querySelector("input#question-six").value);
+  const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
+  const questionOne = parseInt(document.querySelector("question#question-one").value);
+  // const questionTwo = parseInt(document.querySelector("input#question-Two").value);
+  // const questionThree = parseInt(document.querySelector("input#question-three").value);
+  // const questionFour = parseInt(document.querySelector("input#question-four").value);
+  // const questionFive = parseInt(document.querySelector("input#question-five").value);
+  // const questionSix = parseInt(document.querySelector("input#question-six").value);
 
   document.getElementById("language-1").setAttribute("class", "hidden");
   document.getElementById("language-2").setAttribute("class", "hidden");
@@ -34,18 +37,15 @@ function languageSelector(e){
     Q5 - if (a & b) || (b & c) = b
     Q6 - if (a || b) && (c) = c
   */
-  const a = 1;
-  const b = 2;
-  const c = 3; 
 
-  if( questionOne === a ){
+  if( questionOne === 1){
     totalValue = totalValue + 1;
     console.log("total value: a", totalValue)
     return totalValue;
   }
 }
-// Time permitting, to be added: handleSubmission
-window.addEventListener("load", languageSelector){
+// Time permitting, to be added: handleSubmission(languageSelector)
+window.addEventListener("load", function() {
   const form = document.getElementById("form-submit");
   form.addEventListener("submit", languageSelector);
-}
+});
