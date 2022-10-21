@@ -17,7 +17,7 @@ function languageSelector(e){
 
   // const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
   const questionOne = parseInt(document.querySelector("input[name='question-one']:checked").value); 
-  // const questionTwo = parseInt(document.querySelector("input[name='question-two']:checked").value);
+  const questionTwo = parseInt(document.querySelector("input[name='question-two']:checked").value);
   // const questionOne = parseInt(document.querySelector("question#question-one").value);
   // const questionTwo = parseInt(document.querySelector("input#question-Two").value);
   // const questionThree = parseInt(document.querySelector("input#question-three").value);
@@ -44,7 +44,7 @@ function languageSelector(e){
 
   //   return totalValue;
   // } 
-    totalValue = questionOne; // + questionTwo;
+    totalValue = questionOne + questionTwo;
     console.log("total Q1 if/else value: ", totalValue) ;
 
   // TO BE MOVED OUTSIDE:
@@ -52,13 +52,13 @@ function languageSelector(e){
    if( totalValue < 6 ){ 
     console.log("eval tot", totalValue);   
     output = document.getElementById("language-1").removeAttribute("class"); 
-    return totalValue;
-    // output.removeAttribute("class"); 
+    return totalValue; 
    } 
-  //  else if ( totalValue === 6 ){
-  //   console.log("eval tot 6", totalValue);    
-  //   document.getElementById("language-2").removeAttribute("class");
-  //  }
+   else if ( totalValue === 6 ){
+    console.log("eval tot 6", totalValue);    
+    document.getElementById("language-2").removeAttribute("class");
+    return totalValue;
+   }
 
     document.getElementById("output").innerText = output;
 }
