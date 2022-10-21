@@ -35,7 +35,8 @@ function languageSelector(e){
 }
 
 // Time permitting, to be added: handleSubmission(languageSelector)
-window.addEventListener("load", function() {
+window.addEventListener("load", function(e) {
   const form = document.getElementById("form-submit");
   form.addEventListener("submit", languageSelector);
+ form.reset(e); 
 });
