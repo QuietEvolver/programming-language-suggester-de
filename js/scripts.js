@@ -22,10 +22,20 @@ document.getElementById("language-2").setAttribute("class", "hidden");
 document.getElementById("language-3").setAttribute("class", "hidden");
 
 /* Given langs: a, b, c:
-  Q1 - a
+  Q1 - a 
   Q2 - b
   Q3 - c
   Q4 - if (a & b) || (a & c) = a
   Q5 - if (a & b) || (b & c) = b
   Q6 - if (a || b) && (c) = c
 */
+a = 1;
+b = 2;
+c = 3; 
+
+if( questionOne === a ){
+  totalValue = totalValue + 1;
+  console.log("total value: a", totalValue)
+  return totalValue;
+}
+
