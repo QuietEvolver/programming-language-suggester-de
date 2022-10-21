@@ -1,5 +1,4 @@
 // BI
-const totalValue = questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix;
 
 // UI
 
@@ -12,6 +11,8 @@ function languageSelector(e){
   const questionFour = parseInt(document.querySelector("input[name='question-four']:checked").value);
   const questionFive = parseInt(document.querySelector("input[name='question-five']:checked").value);
   const questionSix = parseInt(document.querySelector("input[name='question-six']:checked").value);
+  const totalValue = questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix;
+
   document.getElementById("language-1").setAttribute("class", "hidden");
   document.getElementById("language-2").setAttribute("class", "hidden");
   document.getElementById("language-3").setAttribute("class", "hidden");
@@ -36,5 +37,5 @@ function languageSelector(e){
 window.addEventListener("load", function() {
   const form = document.getElementById("form-submit");
   form.addEventListener("submit", languageSelector);
-  form.getElementById("form-submit").reset(); 
+  // form.getElementById("form-submit").reset(); 
 });
