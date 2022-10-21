@@ -11,27 +11,17 @@
 * _CSS_
 * _JavaScript_
 * _Bootstrap_
+* _Web APIs_
 
 ## Description
 
 _This project will make a web page that allows the user (people interested in coding) to decide which language they should learn first and links to definitions of each possibility:
 
-Choose at least three languages that prospective learners should consider. Here are some possibilities:
+Three languages possibilities are:
 
-Ruby
-C#
-JavaScript
-Go
-Python
-Rust
-Swift
-* Isosceles: exactly 2 sides are equal.
-* Scalene: no sides are equal.
-* NOT a triangle: the sum of the lengths of any two sides of a triangle is less than or equal to the length of the third side.
-
-In your code, make sure to use the following:
-* pausing on exceptions and breakpoints to debug
-* event listeners with function declarations
+Go: Like watermelon
+Python: Like snow
+Rust: Like cats
 
 ## Setup/Installation Requirements
 
