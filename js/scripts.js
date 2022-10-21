@@ -51,7 +51,8 @@ function languageSelector(e){
    // language totals calculations
    if( totalValue < 6 ){ 
     console.log("eval tot", totalValue);   
-    document.getElementById("language-1").removeAttribute("class"); 
+    output = document.getElementById("language-1").removeAttribute("class"); 
+    return totalValue;
     // output.removeAttribute("class"); 
    } 
   //  else if ( totalValue === 6 ){
