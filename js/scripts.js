@@ -29,9 +29,9 @@ document.getElementById("language-3").setAttribute("class", "hidden");
   Q5 - if (a & b) || (b & c) = b
   Q6 - if (a || b) && (c) = c
 */
-a = 1;
-b = 2;
-c = 3; 
+const a = 1;
+const b = 2;
+const c = 3; 
 
 if( questionOne === a ){
   totalValue = totalValue + 1;
