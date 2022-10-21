@@ -13,12 +13,10 @@
 function languageSelector(e){
   e.preventDefault();
   let totalValue;
-  const a = 1;
-  const b = 2;
-  const c = 3; 
 
   const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
-  const questionOne = parseInt(document.querySelector("question#question-one").value);
+  const questionOne = parseInt(document.querySelector("input[name='question']:checked").value); 
+  // const questionOne = parseInt(document.querySelector("question#question-one").value);
   // const questionTwo = parseInt(document.querySelector("input#question-Two").value);
   // const questionThree = parseInt(document.querySelector("input#question-three").value);
   // const questionFour = parseInt(document.querySelector("input#question-four").value);
@@ -39,9 +37,9 @@ function languageSelector(e){
   */
 
   if( questionOne === 1){
-    totalValue = totalValue + 1;
+    totalValue = 1;
     console.log("total value: a", totalValue)
-    return totalValue;
+    // return totalValue;
   }
 }
 // Time permitting, to be added: handleSubmission(languageSelector)
