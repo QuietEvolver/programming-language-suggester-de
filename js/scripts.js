@@ -14,7 +14,7 @@ function languageSelector(e){
   e.preventDefault();
   let totalValue;
 
-  const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
+  // const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
   const questionOne = parseInt(document.querySelector("input[name='question']:checked").value); 
   // const questionOne = parseInt(document.querySelector("question#question-one").value);
   // const questionTwo = parseInt(document.querySelector("input#question-Two").value);
@@ -36,10 +36,10 @@ function languageSelector(e){
     Q6 - if (a || b) && (c) = c
   */
 
-  if( questionOne === 1){
-    totalValue = 1;
+  if( questionOne ){
+    totalValue = questionOne;
     console.log("total value: a", totalValue)
-    // return totalValue;
+    return totalValue;
   }
 }
 // Time permitting, to be added: handleSubmission(languageSelector)
