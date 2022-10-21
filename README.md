@@ -25,7 +25,7 @@ Rust: Like cats
 
 ## Setup/Installation Requirements
 
-* _Clone [this](https://github.com/QuietEvolver/triangle-tracker-de.git) repositiory to your desktop_
+* _Clone [this](https://github.com/QuietEvolver/programming-language-suggester-de.git) repositiory to your desktop_
 * _Open the cloned portfolio folder located on your desktop_
 * _Open the index.html file in your browser_
 
