@@ -1,41 +1,22 @@
 // BI
-/* Given langs: a, b, c:
-  Q1 - a
-  Q2 - b
-  Q3 - c
-  Q4 - if (a & b) || (a & c) = a
-  Q5 - if (a & b) || (b & c) = b
-  Q6 - if (a || b) && (c) = c
-*/
 
 // UI
 
 function languageSelector(e){
   e.preventDefault();
 
-  // const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
   const questionOne = parseInt(document.querySelector("input[name='question-one']:checked").value); 
   const questionTwo = parseInt(document.querySelector("input[name='question-two']:checked").value);
   const questionThree = parseInt(document.querySelector("input[name='question-three']:checked").value);
   const questionFour = parseInt(document.querySelector("input[name='question-four']:checked").value);
   const questionFive = parseInt(document.querySelector("input[name='question-five']:checked").value);
-  // const questionSix = parseInt(document.querySelector("input#question-six").value);
+  const questionSix = parseInt(document.querySelector("input[name='question-six']:checked").value);
   const totalValue = questionOne + questionTwo + questionThree + questionFour + questionFive;
-  // let output;
 
   document.getElementById("language-1").setAttribute("class", "hidden");
   document.getElementById("language-2").setAttribute("class", "hidden");
   document.getElementById("language-3").setAttribute("class", "hidden");
 
-  /* Given langs: a, b, c:
-    Q1 - a 
-    Q2 - b
-    Q3 - c
-    Q4 - if (a & b) || (a & c) = a
-    Q5 - if (a & b) || (b & c) = b
-    Q6 - if (a || b) && (c) = c
-  */
-  
   // TO BE MOVED OUTSIDE:
    // language totals calculations
    if( totalValue <= 6 ){ 
