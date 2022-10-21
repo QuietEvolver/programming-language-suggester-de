@@ -18,9 +18,7 @@ function languageSelector(e){
   // const questionValue = parseInt(document.querySelector("input[name='question']:checked").value); 
   const questionOne = parseInt(document.querySelector("input[name='question-one']:checked").value); 
   const questionTwo = parseInt(document.querySelector("input[name='question-two']:checked").value);
-  // const questionOne = parseInt(document.querySelector("question#question-one").value);
-  // const questionTwo = parseInt(document.querySelector("input#question-Two").value);
-  // const questionThree = parseInt(document.querySelector("input#question-three").value);
+  const questionThree = parseInt(document.querySelector("input[name='question-three']:checked").value);
   // const questionFour = parseInt(document.querySelector("input#question-four").value);
   // const questionFive = parseInt(document.querySelector("input#question-five").value);
   // const questionSix = parseInt(document.querySelector("input#question-six").value);
@@ -44,18 +42,18 @@ function languageSelector(e){
 
   //   return totalValue;
   // } 
-    totalValue = questionOne + questionTwo;
+    totalValue = questionOne + questionTwo + questionThree;
     console.log("total Q1 if/else value: ", totalValue) ;
 
   // TO BE MOVED OUTSIDE:
    // language totals calculations
-   if( totalValue < 6 ){ 
+   if( totalValue <= 6 ){ 
     console.log("eval tot", totalValue);   
     output = document.getElementById("language-1").removeAttribute("class"); 
     return totalValue; 
    } 
-   else if ( totalValue === 6 ){
-    console.log("eval tot 6", totalValue);    
+   else if (( totalValue > 6 ) && ( totalValue <= 12)){
+    console.log("eval tot 7-12 ", totalValue);    
     document.getElementById("language-2").removeAttribute("class");
     return totalValue;
    }
