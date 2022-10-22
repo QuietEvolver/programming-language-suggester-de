@@ -38,7 +38,8 @@ function languageSelector(e){
 }
 
 function radioReset(){
-  document.getElementById("question-1").setAttributeNode("value") = null;
+  let resVal = document.getElementById("question-1").setAttributeNode("value:null");
+  console.log("reset value: ", resVal);
 }
 
 // Time permitting, to be added: handleSubmission(languageSelector)
