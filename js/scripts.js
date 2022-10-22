@@ -13,19 +13,23 @@ function languageSelector(e){
   const questionSix = parseInt(document.querySelector("input[name='question-six']:checked").value);
   const totalValue = questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix;
 
+  document.getElementById("output").setAttribute("class","hidden");
   document.getElementById("language-1").setAttribute("class", "hidden");
   document.getElementById("language-2").setAttribute("class", "hidden");
   document.getElementById("language-3").setAttribute("class", "hidden");
 
   // language totals calculations
   if( totalValue <= 8 ){ 
+  document.getElementById("output").removeAttribute("class");
   document.getElementById("language-1").removeAttribute("class"); 
   return totalValue; 
   } 
   else if (( totalValue > 9 ) && ( totalValue <= 14)){
+  document.getElementById("output").removeAttribute("class");
   document.getElementById("language-2").removeAttribute("class");
   return totalValue;
   } else if ( ( totalValue > 14 ) || ( totalValue <= 18 )) {
+    document.getElementById("output").removeAttribute("class");
   document.getElementById("language-3").removeAttribute("class");
   return totalValue;
   }
