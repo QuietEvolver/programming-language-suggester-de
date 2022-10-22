@@ -38,7 +38,7 @@ function languageSelector(e){
 }
 
 function radioReset(){
-  document.getElementById("form-submit").value= " ";
+  document.getElementById("question-1").setAttributeNode("value") = null;
 }
 
 // Time permitting, to be added: handleSubmission(languageSelector)
