@@ -38,12 +38,12 @@ function languageSelector(e){
 }
 
 function radioReset(){
-  document.getElementById("question-1").value= checked;
+  document.getElementById("form-submit").value= " ";
 }
 
 // Time permitting, to be added: handleSubmission(languageSelector)
 window.addEventListener("load",  function() {
   const form = document.getElementById("form-submit");
   form.addEventListener("submit", languageSelector);  
-  radioReset;
+  form.removeEventListener("submit", radioReset);
 });
