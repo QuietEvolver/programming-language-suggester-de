@@ -37,5 +37,9 @@ function languageSelector(e){
 window.addEventListener("load", function() {
   const form = document.getElementById("form-submit");
   form.addEventListener("submit", languageSelector);
-  // form.getElementById("form-submit").reset(); 
+  // form.removeEventListener("submit", languageSelector); // try #1
+  // form.getElementById("form-submit").reset();          // try #2
+  form.reset();                                         // try #3
+  return false;
+  
 });
