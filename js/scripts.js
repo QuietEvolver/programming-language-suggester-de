@@ -37,8 +37,13 @@ function languageSelector(e){
   document.getElementById("output").innerText = output;
 }
 
+function radioReset(){
+  document.getElementById("question-1").value= checked;
+}
+
 // Time permitting, to be added: handleSubmission(languageSelector)
-window.addEventListener("load", function() {
+window.addEventListener("load",  function() {
   const form = document.getElementById("form-submit");
   form.addEventListener("submit", languageSelector);  
+  radioReset;
 });
