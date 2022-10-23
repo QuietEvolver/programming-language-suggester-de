@@ -36,15 +36,19 @@ function languageSelector(e){
 
   document.getElementById("output").innerText = output;
 }
-
-function radioReset(){
-  let resVal = document.getElementById("question-1").setAttributeNode("value:null");
-  console.log("reset value: ", resVal);
-}
+// Ask Vanessa:
+// function radioReset(){
+//   let resVal = document.getElementById("question-1").setAttributeNode(input[name='question']:checked = false");
+//   console.log("reset value: ", resVal);
+// }
+  // Goes in window.e>> 
+  // form.removeEventListener("submit", radioReset);
 
 // Time permitting, to be added: handleSubmission(languageSelector)
 window.addEventListener("load",  function() {
   const form = document.getElementById("form-submit");
+  const radioResetBtn = document.getElementById("radio-reset-button");
+  radioResetBtn.removeAttribute("class", "hidden");
   form.addEventListener("submit", languageSelector);  
-  form.removeEventListener("submit", radioReset);
+  radioResetBtn.removeEventListener("click", reset);
 });
