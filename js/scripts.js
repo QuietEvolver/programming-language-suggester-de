@@ -33,10 +33,8 @@ function languageSelector(e){
     document.getElementById("language-3").removeAttribute("class");
   return totalValue;
   }
-
-  document.getElementById("output").innerText = output;
 }
-// Ask Vanessa:
+
 // function radioReset(){
 //   let resVal = document.getElementById("question-1").setAttributeNode(input[name='question']:checked = false");
 //   console.log("reset value: ", resVal);
@@ -48,7 +46,6 @@ function languageSelector(e){
 window.addEventListener("load",  function() {
   const form = document.getElementById("form-submit");
   const radioResetBtn = document.getElementById("radio-reset-button");
-  radioResetBtn.removeAttribute("class", "hidden");
-  form.addEventListener("submit", languageSelector);  
-  radioResetBtn.removeEventListener("click", reset);
+  // radioResetBtn.removeAttribute("class", "hidden");
+  form.addEventListener("submit", languageSelector);
 });
